@@ -1,0 +1,125 @@
+/* General Palette:
+   Dark green, swamp blue, muted purple, highlight red/orange */
+
+:root {
+  --green: #007b43;
+  --dark-green: #013220;
+  --swamp-blue: #1a2e40;
+  --purple: #4a2d6d;
+  --red: #c62828;
+  --text-light: #f5f5f5;
+}
+
+/* Shared fonts */
+body {
+  margin: 0;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* --------- Main site --------- */
+.main-body {
+  background-color: var(--dark-green);
+  color: var(--text-light);
+  text-align: center;
+  padding: 40px;
+}
+
+header {
+  background-color: var(--green);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  font-family: 'Orbitron', sans-serif;
+  transition: 0.3s ease;
+}
+
+header:hover {
+  background-color: var(--swamp-blue);
+  border: 5px ridge var(--red);
+  transform: scale(1.05);
+}
+
+.highlight {
+  color: var(--red);
+}
+
+.text {
+  margin: 20px;
+  padding: 10px;
+  background: var(--purple);
+  border-radius: 10px;
+  color: white;
+}
+
+button {
+  background-color: var(--green);
+  border: none;
+  padding: 12px 24px;
+  margin: 10px;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--swamp-blue);
+  color: var(--red);
+  border: 2px solid var(--red);
+  transform: scale(1.1);
+}
+
+#footer {
+  margin-top: 40px;
+  color: #bbb;
+  font-family: 'Uncial Antiqua', serif;
+}
+
+/* --------- Blank mode --------- */
+.blank-body {
+  background: linear-gradient(to bottom right, var(--dark-green), var(--swamp-blue));
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+fieldset {
+  border: 2px solid var(--green);
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+fieldset legend {
+  font-family: 'Uncial Antiqua', serif;
+  color: var(--red);
+  font-size: 1.2em;
+}
+
+canvas {
+  display: block;
+  margin: 20px auto;
+  border: 3px solid var(--green);
+  border-radius: 10px;
+  background: black;
+}
+
+.toolbar button {
+  margin: 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 15px;
+  background: var(--swamp-blue);
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid var(--green);
+}

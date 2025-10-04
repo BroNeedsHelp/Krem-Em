@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Krem Emulator - Blank Mode</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body class="blank-body">
+  <main>
+    <fieldset>
+      <legend>K. Rool’s Lair</legend>
+      <canvas id="screen" width="480" height="320"></canvas>
+      <div class="toolbar">
+        <button onclick="exportSave()">Export Save</button>
+        <button onclick="importSaveFile()">Import Save</button>
+        <button onclick="saveToBox()">Copy Save</button>
+        <button onclick="loadFromBox()">Load Save</button>
+      </div>
+      <textarea id="saveBox" rows="6" placeholder="Paste save data here..."></textarea>
+    </fieldset>
+  </main>
+
+  <footer>
+    Blank Mode · Powered by Emulator.js
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
